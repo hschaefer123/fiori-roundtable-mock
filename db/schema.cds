@@ -13,7 +13,7 @@ entity SalesOrderItems {
   key itemId      : String(5)         @title: 'Item Number';
   key order       : Association to SalesOrders;
       productName : String(100)       @title: 'Product';
-      quantity    : Integer           @title: 'Quantity';
+      quantity    : Integer           @title: 'Quantity' @assert.range: [0, 10];
       unitPrice   : Decimal(15,2)     @title: 'Unit Price';
       lineTotal   : Decimal(15,2)     @title: 'Line Total';
 }
