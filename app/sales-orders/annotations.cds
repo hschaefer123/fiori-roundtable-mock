@@ -67,6 +67,18 @@ annotate service.SalesOrders with @(
             Label : 'General Information',
             Target : '@UI.FieldGroup#GeneratedGroup',
         },
+        {
+            $Type : 'UI.CollectionFacet',
+            ID : 'ItemsFacet',
+            Label : 'Sales Order Items',
+            Facets : [
+                {
+                    $Type : 'UI.ReferenceFacet',
+                    Label : 'Items',
+                    Target : 'items/@UI.LineItem',
+                }
+            ],
+        },
     ],
 
     UI.HeaderInfo: {
@@ -120,3 +132,27 @@ annotate service.SalesOrders with {
     )
 };
 
+annotate service.SalesOrderItems with @(
+    UI.LineItem : [
+        {
+            $Type : 'UI.DataField',
+            Value : itemId,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : productName,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : quantity,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : unitPrice,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : lineTotal,
+        },
+    ],
+);
