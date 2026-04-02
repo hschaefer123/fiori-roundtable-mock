@@ -100,3 +100,22 @@ annotate service.SalesOrders with @(
     ],
 );
 
+annotate service.SalesOrders with {
+    status @(
+        Common.ValueList: {
+            CollectionPath: 'SalesOrderStatuses',
+            Parameters: [
+                {
+                    $Type: 'Common.ValueListParameterInOut',
+                    LocalDataProperty: status,
+                    ValueListProperty: 'code'
+                },
+                {
+                    $Type: 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty: 'name'
+                }
+            ]
+        }
+    )
+};
+
