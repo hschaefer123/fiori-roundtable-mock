@@ -1,0 +1,100 @@
+# =========================
+# Node.js / CAP
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# CAP build artifacts
+gen/
+srv/gen/
+app/gen/
+
+# CDS / CAP temp files
+.cdsrc-private.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# =========================
+# SAPUI5 / Fiori Elements
+# =========================
+dist/
+webapp/dist/
+ui5.yaml.local
+ui5-local.yaml
+
+# UI5 Tooling cache
+.ui5/
+coverage/
+
+# =========================
+# MTA (Multi-Target App)
+# =========================
+.mta/
+mta_archives/
+*.mtar
+
+# Cloud Foundry deployment
+cf-*.json
+
+# =========================
+# Build / Output
+# =========================
+build/
+target/
+out/
+tmp/
+temp/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+# keep: .vscode/extensions.json, .vscode/tasks.json
+
+.idea/
+*.iml
+
+# =========================
+# Git / Misc
+# =========================
+*.swp
+*.bak
+*.orig
+
+# =========================
+# SQLite (lokale CAP DB)
+# =========================
+*.db
+*.sqlite
+
+# =========================
+# Testing
+# =========================
+coverage/
+.nyc_output/
+
+# =========================
+# Optional: Fiori tools
+# =========================
+.fioritools/
+
+# =========================
+# Optional: CDS Watch
+# =========================
+cds-watch.log

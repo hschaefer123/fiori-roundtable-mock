@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(cds *)",
+      "Bash(cf *)",
+      "Bash(git *)"
+    ]
+  }
+}

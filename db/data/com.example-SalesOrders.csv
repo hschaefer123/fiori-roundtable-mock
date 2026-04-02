@@ -1,0 +1,16 @@
+orderId,customerName,orderDate,netAmount,status
+SA1000,Acme Corp,2023-12-31,1200.00,Open
+SA1001,TechWave AG,2024-02-01,3450.00,In Process
+SA1002,BlueSky Ltd,2024-03-02,780.00,Completed
+SA1003,GlobalTrade,2024-04-03,12000.00,Error
+SA1004,InfoSoft SE,2024-05-04,5670.00,Open
+SA1005,NextGen AG,2024-06-05,890.00,In Process
+SA1006,DataSphere,2024-07-06,23400.00,Completed
+SA1007,CloudBase,2024-08-07,4500.00,Error
+SA1008,SmartLine,2024-09-08,6780.00,Open
+SA1009,FutureTech,2024-10-09,990.00,In Process
+SA1010,PrimeLogic,2024-11-10,8250.00,Completed
+SA1011,AlphaVenture,2024-12-11,17600.00,Error
+SA1012,SkyBridge GmbH,2024-01-12,3120.00,Open
+SA1013,NordData AS,2024-02-13,44900.00,In Process
+SA1014,OceanTech Ltd,2024-03-14,7340.00,Completed
