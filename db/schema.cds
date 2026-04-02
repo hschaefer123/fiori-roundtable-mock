@@ -1,11 +1,19 @@
 namespace com.example;
 
+type SalesOrderStatus : String enum {
+  Open;
+  InProgress;
+  Shipped;
+  Delivered;
+  Cancelled;
+}
+
 entity SalesOrders {
   key orderId          : String(10)    @title: 'Order ID';
       customerName     : String(100)   @title: 'Customer';
       orderDate        : Date          @title: 'Order Date';
       netAmount        : Decimal(15,2) @title: 'Net Amount';
-      status           : String(100)   @title: 'Status';
+      status           : SalesOrderStatus default 'Open'   @title: 'Status';
       items            : Composition of many SalesOrderItems on items.order = $self;
 }
 
