@@ -102,6 +102,7 @@ annotate service.SalesOrders with @(
 
 annotate service.SalesOrders with {
     status @(
+        Common.ValueListWithFixedValues: true,
         Common.ValueList: {
             CollectionPath: 'SalesOrderStatuses',
             Parameters: [
