@@ -2,4 +2,5 @@ using { com.example as ns } from '../db/schema';
 
 service SalesOrderService {
   entity SalesOrders as projection on ns.SalesOrders;
+  entity SalesOrderStatuses as projection on ns.SalesOrderStatuses;
 }

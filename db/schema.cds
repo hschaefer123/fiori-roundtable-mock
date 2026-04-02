@@ -8,6 +8,12 @@ type SalesOrderStatus : String enum {
   Cancelled;
 }
 
+@cds.odata.valuelist
+entity SalesOrderStatuses {
+  key code : SalesOrderStatus;
+      name : String @title: 'Status Name';
+}
+
 entity SalesOrders {
   key orderId          : String(10)    @title: 'Order ID';
       customerName     : String(100)   @title: 'Customer';
