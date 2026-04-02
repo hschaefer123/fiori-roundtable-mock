@@ -1,5 +1,8 @@
 using SalesOrderService as service from '../../srv/SalesOrder-service';
 
+// Enable draft support for SalesOrders
+annotate service.SalesOrders with @odata.draft.enabled;
+
 // Criticality mapping for status:
 // 'Open' → 5 (Informative)
 // 'In Process' → 2 (Critical)
