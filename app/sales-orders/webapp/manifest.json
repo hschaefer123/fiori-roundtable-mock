@@ -103,6 +103,7 @@
             "settings": {
               "contextPath": "/SalesOrders",
               "variantManagement": "Page",
+              "initialLoad": true,
               "navigation": {
                 "SalesOrders": {
                   "detail": {
