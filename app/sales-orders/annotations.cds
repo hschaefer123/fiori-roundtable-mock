@@ -52,6 +52,12 @@ annotate service.SalesOrders with @(
     UI.DataPoint #status: {
         Value: status,
         Title: 'Status',
+        Criticality: (
+            status = 'Error' ? 1 :      // Negative
+            status = 'In Process' ? 2 : // Critical
+            status = 'Completed' ? 3 :  // Positive
+            5                           // Informative (default for 'Open')
+        ),
     },
 
     UI.Facets : [
@@ -88,8 +94,8 @@ annotate service.SalesOrders with @(
             Value : netAmount,
         },
         {
-            $Type : 'UI.DataField',
-            Value : status,
+            $Type : 'UI.DataFieldForAnnotation',
+            Target : '@UI.DataPoint#status',
         },
     ],
 );
