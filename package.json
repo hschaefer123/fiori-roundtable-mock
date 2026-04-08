@@ -9,14 +9,15 @@
     "cds-plugin-ui5": "^0.17.0"
   },
   "scripts": {
-    "start": "cds-serve",
-    "watch-sales-orders": "cds watch --open salesorders/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch": "cds watch --open salesorders/test/flp.html#app-preview?sap-ui-xx-viewCache=false --livereload false",    
+    "watch-sales-orders": "cds watch --open salesorders/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "start": "cds-serve"
   },
   "private": true,
   "workspaces": [
     "app/*"
   ],
   "sapux": [
-    "app/sales-orders"
+    "app/salesorders"
   ]
 }
