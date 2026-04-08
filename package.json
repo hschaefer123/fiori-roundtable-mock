@@ -1,6 +1,10 @@
 {
   "name": "fiori-roundtable-mock",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hschaefer123/fiori-roundtable-mock"
+  },
   "dependencies": {
     "@sap/cds": "^9"
   },
