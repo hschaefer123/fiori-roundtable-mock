@@ -24,11 +24,12 @@ sap.ui.define([], function () {
         document.head.appendChild(style);
     }
 
-    // Variante A: externe CSS-Datei
+    // Add external CSS files
     injectCssFile("custom-theme/variables-light.css");
     injectCssFile("custom-theme/variables-dark.css");
+    injectCssFile("custom-theme/variables-sandbox-fix.css");
 
-    // Variante B: inline CSS
+    // Add inline CSS
     injectInlineCss(`
         #shell-header-icon {
           content: var(--sapCompanyLogo);

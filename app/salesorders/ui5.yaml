@@ -25,4 +25,4 @@ server:
       afterMiddleware: fiori-tools-appreload
       configuration:
         flp:
-          init: /test/custom-theme/init
+          init: /test/custom-theme/init # inject custom theme variables

@@ -1,0 +1,21 @@
+/* Fix for sandbox launchpad: ../test-resources/sap/ushell/bootstrap/sandbox.js 
+ * Sandbox has not been updated to use new theme vars instead using hardcoded color vars.
+ * To mimic the launchpad shell behavior, some tweaks are nessessary.
+ */
+
+.sapUshellAnchorItemSelected {
+    color: var(--sapShell_Active_TextColor);
+}
+
+.sapUshellAnchorItem.sapUshellAnchorItemSelected::after {
+    background: var(--sapShell_Active_TextColor);
+}
+
+.sapUshellAnchorItem:hover,
+.sapUshellAnchorItem:active {
+    color: var(--sapShell_Active_TextColor);
+}
+
+.sapUshellTile:focus::after {
+    border: var(--sapShell_Active_TextColor);
+}
